@@ -7,12 +7,14 @@
   --button-nav-color: #f5f4fa;
   --same-section-color: rgba(47, 48, 58, 1);
   --link-color: #212121;
-  /*--primery-font-family: 'Roboto', sans-serif;*/
-}
+  --box-shadow-team: rgba(0, 0, 0, 0, 2), rgba(0, 0, 0, 0, 14),
+    rgba(0, 0, 0, 0, 12);
+  --border: 1px solid rgba(236, 236, 236, 1);
+ }
 
 body {
   color: var(--primery-text-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.03em;
@@ -22,10 +24,10 @@ html {
 }
 *,
 *::before,
-*::after{
+*::after {
   box-sizing: inherit;
 }
-.list{
+.list {
   font-weight: 500;
   margin: 0px;
   padding: 0px;
@@ -33,7 +35,7 @@ html {
 .list,
 .nav-list {
   list-style: none;
-  }
+}
 a {
   text-decoration: none;
 }
@@ -47,15 +49,25 @@ h3 {
   padding-left: 15px;
   padding-right: 15px;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 /*хедер*/
 /*оформлення логотипу*/
-.page-header .header-nav, .logo{
+.page-header {
+  width: 1200px;
+  border-bottom: var(--border);
+}
+.page-header .header-nav,
+.logo {
   display: flex;
   align-items: center;
-  }
+}
 
 .logo .logo-text-first {
-  font-family: 'Ralwey', sans-serif;
+  font-family: "Ralwey", sans-serif;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.1;
@@ -63,7 +75,7 @@ h3 {
   color: var(--accent-color);
 }
 .logo .logo-text-second {
-  font-family: 'Ralwey', sans-serif;
+  font-family: "Ralwey", sans-serif;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.1;
@@ -72,46 +84,47 @@ h3 {
 }
 /*навігація хедера*/
 
-  .main-nav, .logo,
-  .pages-nav,
-  .contacts{
+.main-nav,
+.logo,
+.pages-nav,
+.contacts {
   display: flex;
   align-items: center;
-  }
+}
 
 .pages-nav .n-item:not(:last-child),
 .contacts .a-item:not(:last-child) {
   margin-right: 50px;
- }
-.pages-nav .n-item{
+}
+.pages-nav .n-item {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.pages-nav{
+.pages-nav {
   margin-left: 93px;
 }
-.contacts .a-item{
+.contacts .a-item {
   display: block;
   padding-top: 32px;
-  padding-bottom:32px;
+  padding-bottom: 32px;
 }
-.contacts{
+.contacts {
   margin-left: auto;
 }
 
 .list.link {
   color: var(--link-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
-  
 }
 .link:hover,
 .link:focus {
-  color: var(--accent-color);}
-  .auth-nav {
+  color: var(--accent-color);
+}
+.auth-nav {
   color: var(--primery-text-color);
 }
 
@@ -126,7 +139,7 @@ h3 {
   padding-right: 285px;
   padding-bottom: 200px;
   padding-left: 285px;
-  }
+}
 h1 {
   color: #fff;
   font-style: normal;
@@ -137,7 +150,7 @@ h1 {
   text-align: center;
   margin-top: 0px;
   margin-bottom: 43px;
-  }
+}
 
 .button-hero {
   color: var(--primery-br-color);
@@ -146,39 +159,34 @@ h1 {
   font-size: 16px;
   line-height: 1.8;
   text-align: center;
-  text-shadow: rgba(0, 0, 0, 0,15);
+  text-shadow: rgba(0, 0, 0, 0, 15);
   border: none;
   border-radius: 4px;
   cursor: pointer;
   min-width: 136px;
   height: 30px;
-  
-  }
+}
 /*секція під герой*/
- .container.content{
+.container.content {
   display: inline-block;
-  /*margin-top: 94px;
-  margin-bottom: 94px;*/
  }
-  /*margin-top: 100px;
-  /*margin-bottom: 94px;*/
 
-  .feature-list{
+.feature-list {
   display: flex;
   flex-wrap: nowrap;
   margin-top: 94px;
   margin-bottom: 94px;
   padding: 0px;
-  }
-.feature-list .f-item{
+}
+.feature-list .f-item {
   display: inline-block;
   width: 270px;
   margin-right: 30px;
-  }
-.feature-list.f-item:not(:last-child){
+}
+.feature-list.f-item:not(:last-child) {
   margin-right: 30px;
 }
-.title .subject{
+.title .subject {
   margin-top: 94px;
   margin-bottom: 10px;
 }
@@ -203,7 +211,7 @@ h1 {
   margin-bottom: 94px;
   margin-left: auto;
 }
- .disc {
+.disc {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.1;
@@ -216,23 +224,23 @@ h1 {
   margin-left: auto;
   padding: 0px;
 }
-.discription-list{
+.discription-list {
   display: flex;
   margin-top: 50px;
   margin-bottom: 94px;
 }
-.discription-list .d-item{
+.discription-list .d-item {
   width: 370px;
   margin-right: 30px;
 }
-.discription-list .d-item:not(:last-child){
+.discription-list .d-item:not(:last-child) {
   margin-right: 30px;
 }
 .container.name {
   background: #f5f4fa;
   padding-top: 94px;
 }
-.comand{
+.comand {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.1;
@@ -245,28 +253,49 @@ h1 {
   margin-left: auto;
   padding: 0px;
 }
-.team{
+.team {
   display: flex;
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.t-item{
+.t-item {
   width: 370px;
   margin-right: 30px;
-  }
-.t-item:not(:last-child){
+}
+.t-item:not(:last-child) {
   margin-right: 30px;
 }
-.title.name {
+.box {
+  width: 270px;
+  border-right: var(--border);
+  border-bottom: var(--border);
+  border-left: var(--border);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.box > h3 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.box > p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.team .title .name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.1;
   color: var(--title-text-color);
+  margin: 0px;
 }
-.text.position {
+.team .text .position {
   font-size: 16px;
   line-height: 1.1;
   color: var(--primery-text-color);
+  box-shadow: var(--box-shadow-team);
+  margin: 0px;
 }
 /*футер*/
 
@@ -277,17 +306,17 @@ h1 {
   background-color: var(--same-section-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  }
+}
 
 .logo-footer {
-  font-family: 'Ralwey', sans-serif;
+  font-family: "Ralwey", sans-serif;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.1;
   text-decoration: none;
   color: var(--primery-br-color);
-  }
-.down-logo{
+}
+.down-logo {
   width: 145px;
   margin-right: auto;
   margin-bottom: 20px;
@@ -301,20 +330,28 @@ h1 {
   font-size: 14px;
   line-height: 1.1;
 }
-.contact-list{
+.contact-list {
   width: 231px;
   margin-right: auto;
   margin-left: 0px;
-  }
- 
+}
+
 /*сторінка портфоліо*/
 
 /*секція навігаційних кнопок*/
 
+.nav-list {
+  display: flex;
+  width: 611px;
+  margin-top: 94px;
+  margin-right: auto;
+  margin-bottom: 34px;
+  margin-left: auto;
+}
 .nav-list .button.item {
   color: solid var(--link-color);
   background: var(--button-nav-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -322,28 +359,73 @@ h1 {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  margin-right: 8px;
 }
-
+.button.item:not(:last-child) {
+  margin-right: 8px;
+}
 .button.item:hover,
 .button.item:focus {
   color: var(--primery-br-color);
   background: var(--accent-color);
 }
+.galery {
+  padding-bottom: 94px;
+}
+.projects-list {
+  flex-basis: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
 
+.card-set {
+  flex-basis: calc((100% - 30px) / 3);
+  margin-bottom: 30px;
+}
+
+.projects-list .p-item {
+  flex-basis: 370px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+
+.projects-list:nth-child(3n) {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.pack {
+  width: 370px;
+  border-right: var(--border);
+  border-bottom: var(--border);
+  border-left: var(--border);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+}
+.pack > h3 {
+  margin-top: 0px;
+  margin-bottom: 4px;
+  text-align: left;
+}
+.pack > p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: left;
+}
 .title .lead {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   color: var(--title-text-color);
+  flex-basis: 322px;
 }
 .text.disc {
   font-size: 16px;
   line-height: 1.8;
   color: var(--primery-text-color);
+  flex-basis: 322px;
 }
-/*занінчення основної частини сторінки портфоліо*/
 
-/*Флекси*/
-/*.container .header{
-  display: flex;
-}*/
+/*занінчення основної частини сторінки портфоліо*/
