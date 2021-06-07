@@ -45,7 +45,7 @@ h3 {
 }
 .container {
   width: 1200px;
-  margin: 0, auto;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -57,16 +57,16 @@ img {
 /*хедер*/
 /*оформлення логотипу*/
 .page-header {
-  width: 1200px;
   border-bottom: var(--border);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
-.page-header .header-nav,
-.logo {
+.page-header .header-nav{
   display: flex;
   align-items: center;
 }
 
-.logo .logo-text-first {
+.logo {
   font-family: "Ralwey", sans-serif;
   font-weight: bold;
   font-size: 26px;
@@ -85,7 +85,6 @@ img {
 /*навігація хедера*/
 
 .main-nav,
-.logo,
 .pages-nav,
 .contacts {
   display: flex;
@@ -98,17 +97,14 @@ img {
 }
 .pages-nav .n-item {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  
 }
 .pages-nav {
   margin-left: 93px;
 }
 .contacts .a-item {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
+ }
 .contacts {
   margin-left: auto;
 }
@@ -130,16 +126,12 @@ img {
 
 /*основна частина сторінки*/
 /*Блок герой*/
-.container.hero {
+.hero {
   background-color: var(--same-section-color);
-  width: 1200;
-  height: 600;
   text-align: center;
   padding-top: 200px;
-  padding-right: 285px;
   padding-bottom: 200px;
-  padding-left: 285px;
-}
+  }
 h1 {
   color: #fff;
   font-style: normal;
@@ -170,25 +162,32 @@ h1 {
 .container.content {
   display: inline-block;
  }
+.feature{
+  width: 1200px;
+  padding-top: 94px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 .feature-list {
   display: flex;
   flex-wrap: nowrap;
-  margin-top: 94px;
-  margin-bottom: 94px;
-  padding: 0px;
 }
-.feature-list .f-item {
+.f-item > h3 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.f-item > p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+ 
+}
+.f-item {
   display: inline-block;
   width: 270px;
-  margin-right: 30px;
 }
-.feature-list.f-item:not(:last-child) {
+.f-item:not(:last-child) {
   margin-right: 30px;
-}
-.title .subject {
-  margin-top: 94px;
-  margin-bottom: 10px;
 }
 
 .title .subject {
@@ -197,70 +196,60 @@ h1 {
   line-height: 1.1;
   text-transform: uppercase;
   color: var(--title-text-color);
-  margin-top: 100px;
-  margin-right: 30px;
-  margin-bottom: 10px;
-  margin-left: auto;
+  
 }
 .text.subject {
   font-size: 14px;
   line-height: 1.7;
   color: var(--primery-text-color);
+}
+.work{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.work .disc {
   margin-top: 0px;
-  margin-right: 30px;
-  margin-bottom: 94px;
-  margin-left: auto;
+  
 }
 .disc {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.1;
-  text-align: center;
   color: var(--title-text-color);
-  width: 376px;
-  margin-top: 0px;
-  margin-right: auto;
-  margin-bottom: 0px;
-  margin-left: auto;
-  padding: 0px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 .discription-list {
   display: flex;
   margin-top: 50px;
-  margin-bottom: 94px;
 }
 .discription-list .d-item {
   width: 370px;
-  margin-right: 30px;
-}
+ }
 .discription-list .d-item:not(:last-child) {
   margin-right: 30px;
 }
-.container.name {
+.name {
   background: #f5f4fa;
   padding-top: 94px;
+  padding-bottom: 94px;
+}
+.name .comand{
+  margin-top: 0px;
 }
 .comand {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.1;
-  text-align: center;
   color: var(--title-text-color);
-  width: 376px;
-  margin-top: 0px;
-  margin-right: auto;
+  text-align: center;
   margin-bottom: 50px;
-  margin-left: auto;
-  padding: 0px;
 }
 .team {
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .t-item {
-  width: 370px;
-  margin-right: 30px;
+  width: 270px;
 }
 .t-item:not(:last-child) {
   margin-right: 30px;
@@ -283,7 +272,7 @@ h1 {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.team .title .name {
+.team .title .pip {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.1;
@@ -315,13 +304,16 @@ h1 {
   line-height: 1.1;
   text-decoration: none;
   color: var(--primery-br-color);
-}
+ }
 .down-logo {
   width: 145px;
   margin-right: auto;
-  margin-bottom: 20px;
-  margin-left: 0px;
-  padding-left: 15px;
+   
+}
+.address-list > p{
+  margin-top: 20px;
+  margin-right: auto;
+  margin-bottom: 9px;
 }
 .address-list {
   font-style: normal;
@@ -332,8 +324,13 @@ h1 {
 }
 .contact-list {
   width: 231px;
+  margin-top: 0px;
   margin-right: auto;
+  margin-bottom: 0px;
   margin-left: 0px;
+}
+.mail{
+  margin-bottom: 9px;
 }
 
 /*сторінка портфоліо*/
@@ -428,4 +425,4 @@ h1 {
   flex-basis: 322px;
 }
 
-/*занінчення основної частини сторінки портфоліо*/
+/*занінчення сторінки портфоліо*/
