@@ -331,7 +331,6 @@ h1 {
   line-height: 1.1;
 }
 .contact-list {
-  width: 231px;
   margin-top: 0px;
   margin-right: auto;
   margin-bottom: 0px;
@@ -393,13 +392,13 @@ h1 {
 }
 
 .pack {
-  width: 370px;
   border-right: var(--border);
   border-bottom: var(--border);
   border-left: var(--border);
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
+  padding-right: 24px;
 }
 .pack > h3 {
   margin-top: 0px;
